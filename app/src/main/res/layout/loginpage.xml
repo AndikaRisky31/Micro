@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".pre.LoginPageActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/h1Text"
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:text="Welcome Back!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/img_1" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/labelUsername"
+            style="@style/labelText"
+            android:layout_width="347dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="Your Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/insertUsername"
+            android:layout_width="347dp"
+            android:layout_height="63dp"
+            android:ems="20"
+            android:hint="Username"
+            style="@style/hinttext"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/LabelPassword"
+            style="@style/labelText"
+            android:layout_width="347dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/insertpassword"
+            android:layout_width="347dp"
+            android:layout_height="63dp"
+            android:ems="20"
+            android:hint="Password"
+            style="@style/hinttext"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/CustomButtonStyle"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.376" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
