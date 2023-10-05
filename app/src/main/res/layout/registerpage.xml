@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".pre.RegisterPageActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+    android:id="@+id/textView2"
+    style="@style/h1Text"
+    android:layout_width="220dp"
+    android:layout_height="102dp"
+    android:layout_marginTop="68dp"
+    android:text="Create an Account!"
+    android:textColor="#464647"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.167"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:id="@+id/labelUsername"
+            style="@style/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:labelFor="@id/insertUsername"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/insertUsername"
+            style="@style/hinttext"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="20"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/LabelEmail"
+            style="@style/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:labelFor="@id/insertEmail"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/insertEmail"
+            style="@style/hinttext"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="20"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/LabelPassword"
+            style="@style/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:labelFor="@id/insertpassword"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/insertpassword"
+            style="@style/hinttext"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="20"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:id="@+id/LabelConfirmPassword"
+            style="@style/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:labelFor="@id/insertConfirmPassword"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/insertConfirmPassword"
+            style="@style/hinttext"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="20"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        style="@style/CustomButtonStyle"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.336" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Micro"
         tools:targetApi="31">
         <activity
+            android:name=".pre.RegisterPageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".home.HomepageActivity"
             android:exported="false"
             android:label="@string/title_activity_homepage"
@@ -23,7 +27,6 @@
         <activity
             android:name=".pre.LandingScreenActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Micro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
