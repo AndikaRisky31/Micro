@@ -17,7 +17,7 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
-            android:name=".home.HomepageActivity"
+            android:name=".home.MenuActivity"
             android:exported="false"
             android:label="@string/title_activity_homepage"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

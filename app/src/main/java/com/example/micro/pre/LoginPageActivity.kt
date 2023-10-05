@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView // Ganti dengan import yang benar untuk TextView
 import com.example.micro.R
-import com.example.micro.home.HomepageActivity
+import com.example.micro.home.MenuActivity
 
 class LoginPageActivity : AppCompatActivity() {
     private lateinit var buttonLogin: Button // Deklarasikan buttonLogin sebagai properti
@@ -30,7 +30,7 @@ class LoginPageActivity : AppCompatActivity() {
     }
 
     private fun handleLoginClick() {
-        val intent = Intent(this, HomepageActivity::class.java)
+        val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
     }
     private fun handleToSignUpClick(){
