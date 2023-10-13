@@ -15,7 +15,7 @@ class MenuActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.homepage)
+        setContentView(R.layout.menu)
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnItemSelectedListener{ menuItem ->
