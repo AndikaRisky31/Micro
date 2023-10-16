@@ -1,48 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <!-- Gambar latar belakang -->
-    <ImageView
-        android:id="@+id/backgroundImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/photo_profile" />
-
-    <!-- Latar belakang untuk teks -->
-
-    <!-- Teks yang ditimpa -->
-    <View
-        android:id="@+id/textBackground"
-        android:layout_width="418dp"
-        android:layout_height="248dp"
-        android:background="#FFFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <TextView
-        android:id="@+id/overlayText"
-        android:layout_width="wrap_content"
+        android:id="@+id/headerTextView"
+        style="@style/titlePage"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Teks Anda"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:background="@color/biru"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="2dp"
+        android:text="LAYANAN WARGA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/suratpengantar"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextView">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095"
+            app:riv_corner_radius="30dip" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="156dp"
+            android:background="@drawable/rounded_bottomwhite"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Surat Pengantar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/syaratsuratpengantar"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678" />
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintTop_toBottomOf="@+id/suratpengantar">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="30dip" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="156dp"
+            android:background="@drawable/rounded_bottomwhite"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="PERSYARAT SURAT PENGANTAR"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
