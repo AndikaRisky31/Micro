@@ -13,18 +13,6 @@
         android:theme="@style/Theme.Micro"
         tools:targetApi="31">
         <activity
-            android:name=".pre.RegisterPageActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
-            android:name=".home.MenuActivity"
-            android:exported="false"
-            android:label="@string/title_activity_homepage"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".pre.LoginPageActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
             android:name=".pre.LandingScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.Micro">
@@ -34,6 +22,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".pre.RegisterPageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".home.MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_homepage"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".pre.LoginPageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".layanan.IsidatadiriActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".home.AgendaActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>

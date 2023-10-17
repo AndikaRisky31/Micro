@@ -64,11 +64,12 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/ic_suratpengantar"
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_gravity="center"
-                android:background="@drawable/icon_menu" />
+                android:background="@drawable/icon_menu"
+                android:src="@mipmap/ic_surat"/>
 
             <TextView
                 android:id="@+id/textView1"
@@ -93,7 +94,8 @@
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_gravity="center"
-                android:background="@drawable/icon_menu" />
+                android:background="@drawable/icon_menu"
+                android:src="@mipmap/ic_janjitemu"/>
 
             <TextView
                 android:id="@+id/textView2"
@@ -118,7 +120,8 @@
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_gravity="center"
-                android:background="@drawable/icon_menu" />
+                android:background="@drawable/icon_menu"
+                android:src="@mipmap/ic_status"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -150,11 +153,12 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/buttonAgenda"
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_gravity="center"
-                android:background="@drawable/icon_menu" />
+                android:background="@drawable/icon_menu"
+                android:src="@mipmap/ic_agenda"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -179,7 +183,8 @@
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_gravity="center"
-                android:background="@drawable/icon_menu" />
+                android:background="@drawable/icon_menu"
+                android:src="@mipmap/ic_history"/>
 
             <TextView
                 android:id="@+id/textView5"
@@ -204,7 +209,8 @@
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_gravity="center"
-                android:background="@drawable/icon_menu" />
+                android:background="@drawable/icon_menu"
+                android:src="@mipmap/ic_help"/>
 
             <TextView
                 android:id="@+id/textView6"
@@ -230,16 +236,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
-    <ImageView
-        android:id="@+id/backgroundImage"
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/image1"
         android:layout_width="300dp"
-        android:layout_height="285dp"
-        android:layout_marginTop="4dp"
-        android:scaleType="centerCrop"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_profile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/pic_imunisasi" />
+        app:riv_corner_radius="30dip" />
 
     <View
         android:id="@+id/view"
@@ -248,7 +257,7 @@
         android:layout_marginTop="172dp"
         android:background="@drawable/rounded_bottomwhite"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 

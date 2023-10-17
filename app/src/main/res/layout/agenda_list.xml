@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginTop="20dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:riv_corner_radius="30dip" />
+
+    <View
+        android:id="@id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_bottomwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleAgenda"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="10dp"
+        android:text="Surat Pengantar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image1" />
+
+    <TextView
+        android:id="@+id/jadwal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingHorizontal="10dp"
+        android:text="Jadwal : Sabtu,24 Oktober 2024"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleAgenda" />
+
+    <TextView
+        android:id="@+id/tempat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:text="Tempat Pelaksanaan : Puskesmas Batu Gede"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jadwal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

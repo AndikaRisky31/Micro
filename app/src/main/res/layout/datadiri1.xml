@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        style="@style/titlePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/biru"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="2dp"
+        android:text="LAYANAN WARGA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D83D3D"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:paddingVertical="5dp"
+        android:text="Mohon Jangan Berikan Data Palsu !"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextView" />
+
+    <TextView
+        android:id="@+id/textView14"
+        style="@style/label"
+        android:text="A. Nama Lengkap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/NamaLengkap"
+        style="@style/fieldtextLayanan"
+        android:layout_marginTop="5dp"
+        android:hint="Nama lengkap"
+        android:maxLength="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/labelNIK"
+        style="@style/label"
+        android:text="B. Nomor NIK(Nomor Induk Kependudukan)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NamaLengkap" />
+
+    <EditText
+        android:id="@+id/NIK"
+        style="@style/fieldtextLayanan"
+        android:hint="NIK"
+        android:maxLength="16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNIK" />
+
+    <TextView
+        android:id="@+id/labelTanggalLahir"
+        style="@style/label"
+        android:text="C. Tanggal Lahir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NIK" />
+
+    <EditText
+        android:id="@+id/TanggalLahir"
+        style="@style/fieldtextLayanan"
+        android:hint="Tanggal Lahir"
+        android:maxLength="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelTanggalLahir" />
+
+    <TextView
+        android:id="@+id/labelAgama"
+        style="@style/label"
+        android:text="D. Agama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TanggalLahir" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/roundedshadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelAgama"/>
+
+    <TextView
+        android:id="@+id/labelstatus"
+        style="@style/label"
+        android:text="E. Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/status"
+        style="@style/fieldtextLayanan"
+        android:hint="Status"
+        app:layout_constraintEnd_toEndOf="@+id/headerTextView"
+        app:layout_constraintStart_toStartOf="@+id/headerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/labelstatus" />
+
+    <TextView
+        android:id="@+id/LabelAlamat"
+        style="@style/label"
+        android:text="F. Alamat Lengkap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+    <EditText
+        android:id="@+id/Alamat"
+        style="@style/fieldtextLayanan"
+        android:layout_height="100dp"
+        android:hint="Alamat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelAlamat"/>
+    <TextView
+        android:id="@+id/labelJeniskeperluan"
+        style="@style/label"
+        android:text="G. Jenis Keperluan Surat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Alamat"/>
+    <EditText
+        android:id="@+id/jeniskeperluan"
+        style="@style/fieldtextLayanan"
+        android:hint="Jenis Keperluan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelJeniskeperluan"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

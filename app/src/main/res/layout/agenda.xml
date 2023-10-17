@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGENDA"
+        style="@style/titlePage"
+        android:background="@color/biru"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="2dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="20dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        />
+</LinearLayout>

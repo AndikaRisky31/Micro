@@ -14,13 +14,13 @@
         android:gravity="center_horizontal"
         android:paddingTop="15dp"
         android:paddingBottom="2dp"
-        android:text="LAYANAN WARGA"
+        android:text="@string/titleLayanan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/suratpengantar"
+        android:id="@id/suratpengantar"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
