@@ -153,5 +153,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelJeniskeperluan"/>
 
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/CustomButtonStyle"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="20dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jeniskeperluan"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

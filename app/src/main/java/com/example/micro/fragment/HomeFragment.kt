@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.micro.R
 import com.example.micro.home.AgendaActivity
+import com.example.micro.home.JanjiTemuActivity
 
 class HomeFragment : Fragment() {
     override fun onCreateView(
@@ -20,14 +21,15 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Temukan elemen dengan ID ic_suratpengantar
         val AgendaButton = view.findViewById<View>(R.id.buttonAgenda)
+        val JanjiTemuButton = view.findViewById<View>(R.id.buttonJanjiTemu)
 
-        // Tambahkan OnClickListener untuk elemen tersebut
         AgendaButton.setOnClickListener {
-            // Buat Intent untuk berpindah ke AgendaActivity
             val intent = Intent(context, AgendaActivity::class.java)
-            // Mulai activity
+            startActivity(intent)
+        }
+        JanjiTemuButton.setOnClickListener {
+            val intent = Intent(context, JanjiTemuActivity::class.java)
             startActivity(intent)
         }
     }
