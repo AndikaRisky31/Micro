@@ -55,6 +55,7 @@ dependencies {
     implementation 'androidx.activity:activity-compose:1.7.2'
     implementation 'com.google.android.material:material:1.0.0' // Untuk Android Support Library
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Use the latest version available
+    implementation 'me.biubiubiu.justifytext:library:1.1'
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
     implementation 'androidx.compose.ui:ui-tooling-preview'

@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".pre.Persyaratan_Activity">
+    tools:context=".home.prasyaratActivity">
 
 
     <ImageView
@@ -38,17 +39,16 @@
 
     <EditText
         style="@style/fieldtextLayanan"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_width="356dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="8dp"
         android:text="1.	Meminta surat pengantar pembuatan kartu keluarga baru ke RT setempat dan dilanjutkan distempel ke RW \n\n 2.	Mendatangi kantor kelurahan setempat untuk mengisi dan menandatangani formular permohonan pembuatan Kartu Keluaraga dengan membawa persyaratan – persyaratan berikut \n\n •	Surat pengantar dari RT/RW
 \n\n• Foto kopi buku nikah /akta perkawinan bagi yang sudah menikah atau akte cerai bagi yang membuat KK karena perceraian.\n\n•	Surat Keterangan Pindah Datang ( bagi penduduk datang)
  ."
-        android:textSize="14dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView23"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <
-
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Micro"
         tools:targetApi="31">
+        <activity android:name=".home.ArtikelActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
-            android:name=".pre.Persyaratan_Activity"
+            android:name=".home.prasyaratActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".home.BantuanActivity"

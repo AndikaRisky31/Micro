@@ -1,4 +1,4 @@
-package com.example.micro.pre
+package com.example.micro.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

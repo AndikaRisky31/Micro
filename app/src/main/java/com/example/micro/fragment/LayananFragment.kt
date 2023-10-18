@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.micro.R
+import com.example.micro.home.prasyaratActivity
 import com.example.micro.layanan.IsidatadiriActivity
 
 class LayananFragment : Fragment() {
@@ -22,9 +23,14 @@ class LayananFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val myButton = view.findViewById<View>(R.id.suratpengantar)
+        val buttonprasyarat = view.findViewById<View>(R.id.image2)
 
         myButton.setOnClickListener {
             val intent = Intent(context, IsidatadiriActivity::class.java)
+            startActivity(intent)
+        }
+        buttonprasyarat.setOnClickListener{
+            val intent = Intent(context,prasyaratActivity::class.java)
             startActivity(intent)
         }
     }
