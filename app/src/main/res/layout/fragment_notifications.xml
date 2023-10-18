@@ -6,14 +6,14 @@
 
     <TextView
         android:id="@+id/headerTextView"
+        style="@style/titlePage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NOTIFIKASI"
-        style="@style/titlePage"
         android:background="@color/biru"
         android:gravity="center_horizontal"
         android:paddingTop="15dp"
-        android:paddingBottom="2dp"/>
+        android:paddingBottom="2dp"
+        android:text="NOTIFIKASI" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="20dp"
