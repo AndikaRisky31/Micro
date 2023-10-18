@@ -11,7 +11,7 @@
         android:id="@+id/gambar"
         android:layout_width="match_parent"
         android:layout_height="270dp"
-        android:src="@drawable/Posyandu"
+        android:src="@drawable/posyandu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
