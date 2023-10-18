@@ -11,11 +11,68 @@
         android:id="@+id/gambar"
         android:layout_width="match_parent"
         android:layout_height="270dp"
-        android:src="@drawable/posyandu"
+        android:src="@drawable/Posyandu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Imunisasi di Posyandu"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambar" />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/justifyTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Posyandu merupakan salah satu bentuk Upaya Kesehatan Berbasis Masyarakat (UKBM) yang dikelola dan diselenggarakan dari, oleh, untuk dan bersama masyarakat dalam penyelenggaraan pembangunan kesehatan guna memberdayakan masyarakat dan memberikan kemudahan kepada masyarakat dalam memperoleh pelayanan kesehatan dasar/sosial dasar untuk mempercepat penurunan Angka Kematian Ibu dan Angka Kematian Bayi."
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/justifyTextView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Posyandu yang terintegrasi adalah kegiatan pelayanan sosial dasar keluarga dalam aspek pemantauan tumbuh kembang anak. Dalam pelaksanaannya dilakukan secara koordinatif dan integratif serta saling memperkuat antar program dan kegiatan untuk kelangsungan pelayanan di Posyandu sesuai dengan situasi/kebutuhan lokal yang dalam kegiatannya tetap memperhatikan aspek pemberdayaan masyarakat."
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/justifyTextView4" />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posyandu merupakan wadah pemberdayaan masyarakat yang dibentuk melalui musyawarah mufakat di desa/kelurahan dan dikelola oleh Pengelola Posyandu, yang dikukuhkan dengan keputusan kepala desa/lurah."
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/justifyTextView5" />
 
 
 
