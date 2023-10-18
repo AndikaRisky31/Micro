@@ -9,7 +9,7 @@
     android:layout_marginTop="20dp">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@id/image1"
+        android:id="@id/gambarAgenda"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:adjustViewBounds="true"
@@ -37,16 +37,16 @@
         android:id="@+id/titleAgenda"
         android:layout_width="match_parent"
         android:layout_height="21dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="192dp"
         android:fontFamily="@font/poppins_medium"
         android:paddingHorizontal="10dp"
         android:text="Surat Pengantar"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/image1" />
+        app:layout_constraintTop_toTopOf="@+id/gambarAgenda" />
 
     <TextView
         android:id="@+id/jadwal"

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.micro.R
 import com.example.micro.home.AgendaActivity
+import com.example.micro.home.BantuanActivity
 import com.example.micro.home.JanjiTemuActivity
 
 class HomeFragment : Fragment() {
@@ -23,6 +24,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val AgendaButton = view.findViewById<View>(R.id.buttonAgenda)
         val JanjiTemuButton = view.findViewById<View>(R.id.buttonJanjiTemu)
+        val buttonBantuan = view.findViewById<View>(R.id.buttonbantuan)
 
         AgendaButton.setOnClickListener {
             val intent = Intent(context, AgendaActivity::class.java)
@@ -30,6 +32,10 @@ class HomeFragment : Fragment() {
         }
         JanjiTemuButton.setOnClickListener {
             val intent = Intent(context, JanjiTemuActivity::class.java)
+            startActivity(intent)
+        }
+        buttonBantuan.setOnClickListener{
+            val intent = Intent(context,BantuanActivity::class.java)
             startActivity(intent)
         }
     }

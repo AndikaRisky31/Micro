@@ -13,9 +13,9 @@ class AgendaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.agenda)
         val itemList = listOf(
-            itemAgenda("Gotong royong RT 003/RW 004","24-10-2023","Puskesmas Batu Gede"),
-            itemAgenda("Imunisasi Anak Posyandu Mawar IIX", "23-09-2023","posyandu Batu Gede"),
-            itemAgenda("Imunisasi Anak posyandu MELATI IIX","01-09-2023","Posyandu Mawar IIX")
+            itemAgenda("Gotong royong RT 003/RW 004","24-10-2023","Puskesmas Batu Gede",R.drawable.gotongroyong),
+            itemAgenda("Imunisasi Anak Posyandu Mawar IIX", "23-09-2023","posyandu Batu Gede",R.drawable.posyandu),
+            itemAgenda("Imunisasi Anak posyandu MELATI IIX","01-09-2023","Posyandu Mawar IIX",R.drawable.posyandu)
         )
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)

@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".home.BantuanActivity">
 
     <TextView
         android:id="@+id/textView13"
+        style="@style/titlePage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:background="@color/biru"
-        android:textColor="@color/white"
-        android:paddingTop="20dp"
-        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="2dp"
         android:text="Bantuan"
-        android:textSize="30dp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,54 +24,33 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
+        style="@style/label"
+        android:layout_marginTop="63dp"
         android:text="A. Nama Lengkap"
-        android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/Nama_Lengkap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/Nama_Lengkap"
-        style="@style/hinttext"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:ems="20"
-        android:inputType="textEmailAddress"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="A. Nama Lengkap"
-        android:layout_marginStart="10dp"
-
-        app:layout_constraintBottom_toTopOf="@+id/Nama_Lengkap"
+    <EditText
+        android:id="@+id/Nama_Lengkap"
+        android:hint="-"
+        android:textColorHint="@color/transparant"
+        style="@style/fieldtextLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:ems="20"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        style="@style/label"
         android:text="B. Alamat"
         android:textColor="@color/black"
-        android:layout_marginTop="10dp"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,84 +58,69 @@
 
     <EditText
         android:id="@+id/editText"
-        style="@style/hinttext"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:hint="-"
+        android:textColorHint="@color/transparant"
+        style="@style/fieldtextLayanan"
         android:ems="20"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
         android:inputType="textEmailAddress"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        style="@style/label"
         android:text="C. Jenis Permasalahan"
         android:textColor="@color/black"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/Jenis_Permasalahan"
-        style="@style/hinttext"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:hint="-"
+        android:textColorHint="@color/transparant"
+        style="@style/fieldtextLayanan"
         android:ems="20"
-        android:inputType="textEmailAddress"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/masalah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/label"
         android:text="D. Deskripsikan Permasalahan"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Jenis_Permasalahan" />
 
     <EditText
         android:id="@+id/editText2"
-        style="@style/hinttext"
-        android:layout_width="match_parent"
+        android:hint="-"
+        android:textColorHint="@color/transparant"
         android:layout_height="100dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-
+        style="@style/fieldtextLayanan"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/masalah" />
 
     <Button
+        android:id="@+id/buttonbantuan"
         style="@style/CustomButtonStyle"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:text="Kirim"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.034" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
